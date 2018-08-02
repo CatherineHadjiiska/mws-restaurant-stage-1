@@ -320,6 +320,10 @@ label {
     width: 100vw;
     text-align: center;
   }
+  #restaurants-list li {
+  width: auto;
+  }
+
   .inside {
     display: flex;
     flex-direction: row;
@@ -342,12 +346,15 @@ label {
     margin: auto;
     width: 100vw; 
     text-align: center;
-    padding-top: 140px;
+    padding: 140px 10px 30px 20px;
   }
   .inside #reviews-container {
-    width: 100vw;
+    width: 95%;
     margin: auto;
-    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
   }
   .inside #footer {
     order: 4;
