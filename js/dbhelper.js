@@ -2,11 +2,10 @@
  * Common database helper functions.
  */
 
-// Service Worker
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-  .register("./sw.js", {
-    scope: ""
+  .register('sw.js', {
+    scope: ''
   })
   .then(function(registration) {
     console.log("Service Worker registration is complete:", registration.scope);
