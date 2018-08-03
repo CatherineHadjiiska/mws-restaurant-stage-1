@@ -10,7 +10,7 @@ var filesToCache = [
 './img/6.jpg',
 './img/7.jpg',
 './img/8.jpg', 
-'./img/9.jpp',
+'./img/9.jpg',
 './img/10.jpg',
 './js/dbhelper.js',
 './js/restaurant_info.js',
@@ -29,6 +29,7 @@ self.addEventListener('install', function(event) {
 		})
 		);
 });
+
 self.addEventListener('fetch', event => {
 	event.respondWith(
 		filesToCache.match(event.request, { ignoreSearch: true }).then(response => {return response || fetch(event.request);
