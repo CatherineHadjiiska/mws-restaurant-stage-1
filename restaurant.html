@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
   <!-- Normalize.css for better cross-browser consistency -->
@@ -19,7 +19,7 @@
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
+    <ul id="breadcrumb" role="navigation" aria-label="Breadcrumb">
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -31,20 +31,20 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label="Map with restaurant location marker" role="application"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img" alt="Restaurant Image">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+      <h2 id="restaurant-name" aria-label="Restaurant name"></h2>
+      <img id="restaurant-img" aria-label="Restaurant Image">
+      <p id="restaurant-cuisine" aria-label="Restaurant cuisine"></p>
+      <p id="restaurant-address" aria-label="Restaurant address"></p>
+      <table id="restaurant-hours" aria-label="Restaurant opening hours"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section id="reviews-container">
+    <section id="reviews-container"aria-label="List of customer reviews">
       <ul id="reviews-list"></ul>
     </section>
     <!-- End reviews -->
